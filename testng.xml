@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="Test">
+		<!--第一种：通过配置packages执行整个包下的所有class  -->
+		<packages>
+			<package name="TestNGCase"/>
+		</packages>
+
+	</test>
+	<!--配置监听器-->
+    <listeners>
+        <listener class-name="CommonUtils.ExtentTestNGIReporterListenerOld"/>
+    </listeners>
+</suite>
